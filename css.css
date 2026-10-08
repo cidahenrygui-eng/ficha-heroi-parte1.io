@@ -1,0 +1,1483 @@
+/* ==============================
+   VARIÁVEIS
+============================== */
+
+:root {
+
+    --azul-escuro: #071a2f;
+
+    --azul: #0b4f6c;
+
+    --azul-claro: #01baef;
+
+    --laranja: #ff7b00;
+
+    --amarelo: #ffb703;
+
+    --branco: #ffffff;
+
+    --cinza: #252525;
+
+    --cinza-claro: #eeeeee;
+
+    --preto: #090909;
+
+    --verde: #42b883;
+
+    --roxo: #a855f7;
+
+}
+
+
+/* ==============================
+   CONFIGURAÇÕES GERAIS
+============================== */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background-color:
+        var(--azul-escuro);
+
+    color:
+        var(--branco);
+
+}
+
+
+/* ==============================
+   CABEÇALHO
+============================== */
+
+header {
+
+    background-color:
+        rgba(7, 26, 47, 0.95);
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    border-bottom:
+        3px solid var(--laranja);
+
+}
+
+
+nav {
+
+    min-height: 70px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 30px;
+
+}
+
+
+nav a {
+
+    color:
+        var(--branco);
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    padding: 14px;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+
+}
+
+
+nav a:hover {
+
+    color:
+        var(--preto);
+
+    background-color:
+        var(--laranja);
+
+    transform:
+        translateY(-3px);
+
+}
+
+
+/* ==============================
+   INÍCIO
+============================== */
+
+.inicio {
+
+    min-height: 90vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 70px;
+
+    padding:
+        70px 10%;
+
+    background:
+
+        radial-gradient(
+            circle at 75% 40%,
+            #12698c,
+            #071a2f 55%
+        );
+
+}
+
+
+.inicio-texto {
+
+    max-width:
+        600px;
+
+}
+
+
+.classe {
+
+    color:
+        var(--laranja);
+
+    font-weight: bold;
+
+    letter-spacing:
+        3px;
+
+}
+
+
+.inicio h1 {
+
+    font-size:
+        65px;
+
+    line-height:
+        1;
+
+    margin-top:
+        15px;
+
+    margin-bottom:
+        20px;
+
+}
+
+
+.inicio h1 span {
+
+    display:
+        block;
+
+    color:
+        var(--laranja);
+
+}
+
+
+.inicio h2 {
+
+    font-size:
+        25px;
+
+    color:
+        var(--amarelo);
+
+    margin-bottom:
+        20px;
+
+}
+
+
+.inicio p {
+
+    font-size:
+        20px;
+
+    line-height:
+        1.6;
+
+    margin-bottom:
+        35px;
+
+}
+
+
+/* ==============================
+   IMAGEM DO HERÓI
+============================== */
+
+.inicio-imagem {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+.inicio-imagem img {
+
+    width:
+        430px;
+
+    max-width:
+        100%;
+
+    border-radius:
+        30px;
+
+    border:
+        3px solid var(--laranja);
+
+    box-shadow:
+        0 0 45px
+        rgba(255, 123, 0, 0.35);
+
+}
+
+
+/* ==============================
+   BOTÃO
+============================== */
+
+.botao {
+
+    display:
+        inline-block;
+
+    padding:
+        16px 30px;
+
+    background-color:
+        var(--laranja);
+
+    color:
+        var(--preto);
+
+    text-decoration:
+        none;
+
+    font-weight:
+        bold;
+
+    border-radius:
+        10px;
+
+    transition:
+        0.3s;
+
+}
+
+
+.botao:hover {
+
+    background-color:
+        var(--amarelo);
+
+    transform:
+        scale(1.06);
+
+}
+
+
+/* ==============================
+   SEÇÕES
+============================== */
+
+.secao {
+
+    padding:
+        90px 10%;
+
+}
+
+
+.secao > h2 {
+
+    text-align:
+        center;
+
+    color:
+        var(--laranja);
+
+    font-size:
+        40px;
+
+    margin-bottom:
+        50px;
+
+}
+
+
+/* ==============================
+   SOBRE
+============================== */
+
+.sobre {
+
+    max-width:
+        900px;
+
+    margin:
+        auto;
+
+    padding:
+        40px;
+
+    background-color:
+        var(--cinza);
+
+    border-radius:
+        18px;
+
+    border-left:
+        7px solid
+        var(--laranja);
+
+}
+
+
+.sobre h3 {
+
+    color:
+        var(--amarelo);
+
+    font-size:
+        25px;
+
+    margin-bottom:
+        20px;
+
+}
+
+
+.sobre p {
+
+    line-height:
+        1.8;
+
+    margin-bottom:
+        18px;
+
+}
+
+
+.sobre blockquote {
+
+    margin-top:
+        30px;
+
+    padding:
+        20px;
+
+    background-color:
+        var(--azul);
+
+    border-radius:
+        10px;
+
+    color:
+        var(--amarelo);
+
+    font-size:
+        20px;
+
+    font-weight:
+        bold;
+
+    text-align:
+        center;
+
+}
+
+
+/* ==============================
+   ATRIBUTOS
+============================== */
+
+.atributos-secao {
+
+    background-color:
+        #061423;
+
+}
+
+
+.atributo {
+
+    max-width:
+        850px;
+
+    margin:
+        25px auto;
+
+}
+
+
+.nome-atributo {
+
+    display:
+        flex;
+
+    justify-content:
+        space-between;
+
+    margin-bottom:
+        8px;
+
+    font-weight:
+        bold;
+
+}
+
+
+.barra {
+
+    width:
+        100%;
+
+    height:
+        24px;
+
+    background-color:
+        #394755;
+
+    border-radius:
+        20px;
+
+    overflow:
+        hidden;
+
+}
+
+
+.progresso {
+
+    height:
+        100%;
+
+    border-radius:
+        20px;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            var(--laranja),
+            var(--amarelo)
+        );
+
+}
+
+
+/* ==============================
+   PORCENTAGENS
+============================== */
+
+.astucia {
+
+    width:
+        95%;
+
+}
+
+
+.criatividade {
+
+    width:
+        100%;
+
+}
+
+
+.coragem {
+
+    width:
+        85%;
+
+}
+
+
+.sorte {
+
+    width:
+        90%;
+
+}
+
+
+.velocidade {
+
+    width:
+        70%;
+
+}
+
+
+.forca {
+
+    width:
+        60%;
+
+}
+
+
+.atrapalhacao {
+
+    width:
+        100%;
+
+}
+
+
+/* ==============================
+   HABILIDADES
+============================== */
+
+.habilidades {
+
+    max-width:
+        1000px;
+
+    margin:
+        70px auto 0;
+
+}
+
+
+.habilidades h3 {
+
+    text-align:
+        center;
+
+    color:
+        var(--amarelo);
+
+    font-size:
+        28px;
+
+    margin-bottom:
+        30px;
+
+}
+
+
+.habilidades-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap:
+        20px;
+
+}
+
+
+.habilidade {
+
+    padding:
+        25px;
+
+    background-color:
+        var(--azul);
+
+    border-radius:
+        15px;
+
+    transition:
+        0.3s;
+
+}
+
+
+.habilidade:hover {
+
+    transform:
+        translateY(-6px);
+
+    background-color:
+        #12698c;
+
+}
+
+
+.icone-habilidade {
+
+    font-size:
+        35px;
+
+}
+
+
+.habilidade h4 {
+
+    color:
+        var(--amarelo);
+
+    font-size:
+        20px;
+
+    margin:
+        12px 0;
+
+}
+
+
+.habilidade p {
+
+    line-height:
+        1.5;
+
+}
+
+
+/* ==============================
+   HABILIDADE PRINCIPAL
+============================== */
+
+.poder-principal {
+
+    max-width:
+        900px;
+
+    margin:
+        70px auto 0;
+
+    padding:
+        35px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #10263d,
+            #0b4f6c
+        );
+
+    border:
+        2px solid var(--laranja);
+
+    border-radius:
+        18px;
+
+}
+
+
+.poder-titulo {
+
+    color:
+        var(--laranja);
+
+    font-size:
+        13px;
+
+    font-weight:
+        bold;
+
+    letter-spacing:
+        2px;
+
+}
+
+
+.poder-principal h3 {
+
+    color:
+        var(--amarelo);
+
+    font-size:
+        28px;
+
+    margin:
+        12px 0 20px;
+
+}
+
+
+.poder-principal p {
+
+    line-height:
+        1.6;
+
+}
+
+
+.poder-info {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap:
+        15px;
+
+    margin:
+        30px 0;
+
+}
+
+
+.poder-info div {
+
+    padding:
+        15px;
+
+    background-color:
+        rgba(0, 0, 0, 0.25);
+
+    border-radius:
+        10px;
+
+}
+
+
+.poder-info strong {
+
+    display:
+        block;
+
+    color:
+        var(--laranja);
+
+    margin-bottom:
+        5px;
+
+}
+
+
+.requisito {
+
+    color:
+        var(--amarelo);
+
+    font-weight:
+        bold;
+
+}
+
+
+/* ==============================
+   INVENTÁRIO
+============================== */
+
+.inventario-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap:
+        25px;
+
+}
+
+
+.card {
+
+    position:
+        relative;
+
+    padding:
+        30px;
+
+    background-color:
+        var(--cinza);
+
+    border:
+        2px solid transparent;
+
+    border-radius:
+        15px;
+
+    text-align:
+        center;
+
+    transition:
+        0.3s;
+
+}
+
+
+.card:hover {
+
+    border-color:
+        var(--laranja);
+
+    transform:
+        translateY(-8px);
+
+}
+
+
+.card .icone {
+
+    font-size:
+        55px;
+
+    margin-bottom:
+        20px;
+
+}
+
+
+.card h3 {
+
+    color:
+        var(--amarelo);
+
+    margin-bottom:
+        12px;
+
+}
+
+
+.card p {
+
+    margin-top:
+        15px;
+
+    line-height:
+        1.5;
+
+}
+
+
+/* ==============================
+   DESTAQUE
+============================== */
+
+.destaque::before {
+
+    content:
+        "DESTAQUE";
+
+    position:
+        absolute;
+
+    top:
+        10px;
+
+    right:
+        10px;
+
+    padding:
+        5px 8px;
+
+    background-color:
+        var(--laranja);
+
+    color:
+        var(--preto);
+
+    font-size:
+        11px;
+
+    font-weight:
+        bold;
+
+    border-radius:
+        5px;
+
+}
+
+
+/* ==============================
+   RARIDADES
+============================== */
+
+.lendario {
+
+    color:
+        var(--amarelo);
+
+    font-weight:
+        bold;
+
+}
+
+
+.epico {
+
+    color:
+        var(--roxo);
+
+    font-weight:
+        bold;
+
+}
+
+
+.raro {
+
+    color:
+        var(--azul-claro);
+
+    font-weight:
+        bold;
+
+}
+
+
+.conquista {
+
+    color:
+        var(--verde);
+
+    font-weight:
+        bold;
+
+}
+
+
+/* ==============================
+   CONTATO
+============================== */
+
+.contato {
+
+    background:
+
+        linear-gradient(
+            135deg,
+            var(--azul-escuro),
+            var(--azul)
+        );
+
+}
+
+
+.contato-conteudo {
+
+    max-width:
+        750px;
+
+    margin:
+        auto;
+
+}
+
+
+.contato h2 {
+
+    color:
+        var(--laranja);
+
+    font-size:
+        40px;
+
+    text-align:
+        center;
+
+    margin-bottom:
+        20px;
+
+}
+
+
+.contato-conteudo > p {
+
+    text-align:
+        center;
+
+    font-size:
+        18px;
+
+    line-height:
+        1.6;
+
+    margin-bottom:
+        35px;
+
+}
+
+
+/* ==============================
+   FORMULÁRIO
+============================== */
+
+form {
+
+    padding:
+        35px;
+
+    background-color:
+        #10263d;
+
+    border:
+        2px solid #1d4568;
+
+    border-radius:
+        18px;
+
+}
+
+
+.campo {
+
+    margin-bottom:
+        22px;
+
+}
+
+
+.campo label {
+
+    display:
+        block;
+
+    color:
+        var(--amarelo);
+
+    font-weight:
+        bold;
+
+    margin-bottom:
+        8px;
+
+}
+
+
+.campo input,
+.campo textarea {
+
+    width:
+        100%;
+
+    padding:
+        14px;
+
+    border:
+        2px solid #315572;
+
+    border-radius:
+        10px;
+
+    background-color:
+        var(--azul-escuro);
+
+    color:
+        var(--branco);
+
+    font-size:
+        16px;
+
+    outline:
+        none;
+
+    transition:
+        0.3s;
+
+}
+
+
+.campo input:focus,
+.campo textarea:focus {
+
+    border-color:
+        var(--laranja);
+
+    box-shadow:
+        0 0 8px
+        rgba(255, 123, 0, 0.5);
+
+}
+
+
+.campo textarea {
+
+    resize:
+        vertical;
+
+}
+
+
+/* ==============================
+   BOTÃO DO FORMULÁRIO
+============================== */
+
+.botao-enviar {
+
+    width:
+        100%;
+
+    padding:
+        16px;
+
+    border:
+        none;
+
+    border-radius:
+        10px;
+
+    background-color:
+        var(--laranja);
+
+    color:
+        var(--preto);
+
+    font-size:
+        17px;
+
+    font-weight:
+        bold;
+
+    cursor:
+        pointer;
+
+    transition:
+        0.3s;
+
+}
+
+
+.botao-enviar:hover {
+
+    background-color:
+        var(--amarelo);
+
+    transform:
+        scale(1.02);
+
+}
+
+
+/* ==============================
+   REDES
+============================== */
+
+.redes {
+
+    margin-top:
+        30px;
+
+    text-align:
+        center;
+
+}
+
+
+.redes p {
+
+    margin-bottom:
+        15px;
+
+}
+
+
+.redes a {
+
+    display:
+        inline-block;
+
+    padding:
+        13px 28px;
+
+    background-color:
+        var(--preto);
+
+    color:
+        var(--branco);
+
+    text-decoration:
+        none;
+
+    font-weight:
+        bold;
+
+    border-radius:
+        8px;
+
+    transition:
+        0.3s;
+
+}
+
+
+.redes a:hover {
+
+    background-color:
+        var(--laranja);
+
+    color:
+        var(--preto);
+
+    transform:
+        translateY(-3px);
+
+}
+
+
+/* ==============================
+   RODAPÉ
+============================== */
+
+footer {
+
+    padding:
+        30px;
+
+    background-color:
+        var(--preto);
+
+    text-align:
+        center;
+
+}
+
+
+footer p {
+
+    margin:
+        5px;
+
+    color:
+        var(--cinza-claro);
+
+}
+
+
+/* ==============================
+   TABLET
+============================== */
+
+@media
+(max-width: 900px) {
+
+    .inicio {
+
+        flex-direction:
+            column;
+
+        text-align:
+            center;
+
+    }
+
+
+    .inicio h1 {
+
+        font-size:
+            50px;
+
+    }
+
+
+    .inicio-imagem img {
+
+        width:
+            350px;
+
+    }
+
+
+    .inventario-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .poder-info {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+}
+
+
+/* ==============================
+   CELULAR
+============================== */
+
+@media
+(max-width: 600px) {
+
+    nav {
+
+        flex-direction:
+            column;
+
+        gap:
+            5px;
+
+        padding:
+            15px;
+
+    }
+
+
+    nav a {
+
+        width:
+            100%;
+
+        text-align:
+            center;
+
+    }
+
+
+    .inicio {
+
+        padding:
+            50px 20px;
+
+    }
+
+
+    .inicio h1 {
+
+        font-size:
+            38px;
+
+    }
+
+
+    .inicio h2 {
+
+        font-size:
+            21px;
+
+    }
+
+
+    .inicio p {
+
+        font-size:
+            17px;
+
+    }
+
+
+    .inicio-imagem img {
+
+        width:
+            280px;
+
+    }
+
+
+    .secao {
+
+        padding:
+            60px 20px;
+
+    }
+
+
+    .secao > h2 {
+
+        font-size:
+            30px;
+
+    }
+
+
+    .sobre {
+
+        padding:
+            25px;
+
+    }
+
+
+    .habilidades-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .inventario-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .poder-info {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .poder-principal {
+
+        padding:
+            25px;
+
+    }
+
+
+    form {
+
+        padding:
+            25px;
+
+    }
+
+
+    .contato h2 {
+
+        font-size:
+            30px;
+
+    }
+
+}
